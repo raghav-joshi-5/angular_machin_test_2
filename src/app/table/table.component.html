@@ -1,0 +1,29 @@
+<h3 class="text-center">Table</h3>
+<table class="table table-bordered">
+  <thead>
+    <th>Id</th>
+    <th>Name</th>
+    <th>Category</th>
+    <th>Price</th>
+    <th>Stock</th>
+    <th>Rating</th>
+    <th>Brand</th>
+    <th>Description</th>
+    <th>Color</th>
+    <th>Value</th>
+  </thead>
+  <tbody>
+    <tr *ngFor="let info of productArr">
+      <td>{{ info.id }}</td>
+      <td>{{ info.name }}</td>
+      <td>{{ info.category }}</td>
+      <td>{{ info.price }}</td>
+      <td>{{ info.stock }}</td>
+      <td>{{ info.rating }}</td>
+      <td>{{ info.brand }}</td>
+      <td>{{ info.description }}</td>
+      <td>{{ info.color }}</td>
+      <td>{{ info.value }}</td>
+    </tr>
+  </tbody>
+</table>

@@ -1,0 +1,18 @@
+<h3 class="text-center">Cards</h3>
+<div class="row">
+  <div *ngFor="let card of postCard" class="col-md-4 mb-4">
+    <div class="card h-100">
+      <div class="card-header">
+        <h3 class="mb-0">{{ card.title }}</h3>
+      </div>
+      <div class="card-body">
+        <p class="mb-0">
+          {{ card.body }}
+        </p>
+      </div>
+      <div class="card-footer">
+        <button class="btn btn-sm btn-block btn-info">Add post</button>
+      </div>
+    </div>
+  </div>
+</div>
